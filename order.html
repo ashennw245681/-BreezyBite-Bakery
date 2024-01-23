@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Breezy Bite - Product orders</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/order.css">
+</head>
+<body>
+  <style>
+    body{
+        background-image: url("images/back.png");
+        background-size: 50%; 
+      }
+  </style>
+
+<!-- HTML navbar Code -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container">
+    <a class="navbar-brand" href="home.html"><b>Breezy <span>Bite</span></b></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="home.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="products.html">Products</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="contact.html">About us</a>
+        </li>
+      </ul>
+      <a href="order.html"><img src="images/icon/Icon shopping cart png.png" alt=""></a>
+      <a href="login.html"><img src="images/icon/Icon user.png" alt=""></a>
+    </div>
+  </div>
+</nav>
+<!-- End HTML navbar Code -->
+
+
+<!--  -->
+<div class="container">
+  <div class="col-lg-12">
+    <div class="row">
+        <div class="col-lg-7">
+          <div class="box1">
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th scope="col">Product</th>
+                    <th scope="col"></th>
+                    <th scope="col">Quantity</th>
+                    <th scope="col">Total</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <th scope="row"><img src="images/products/Pastries/Pastries 2.jpg" alt="" width="85px"></th>
+                    <td class="pname"><br>French Croissants</td>
+                    <td><br><input type="number" min="1" max="50" placeholder="2" ></td>
+                    <td class="pname"><br>Rs 460.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="images/products/Breads/Breads.png" alt="" width="85px"></th>
+                    <td class="pname"><br>Bread</td>
+                    <td><br><input type="number" min="1" max="50" placeholder="1"></td>
+                    <td class="pname"><br>Rs 350.00</td>
+                  </tr>
+                  <tr>
+                    <th scope="row"><img src="images/products/Beverages/cream.png" alt="" width="85px"></th>
+                    <td class="pname"><br>Cream Soda</td>
+                    <td><br><input type="number" min="1" max="50" placeholder="1"></td>
+                    <td class="pname"><br>Rs 180.00</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="col">
+              <div class="card mb-4">
+              <div class="card-header py-3">
+                <h5 class="mb-0">Shipping Info</h5>
+              </div>
+                <div class="card-body">
+                  <form>
+                    <div class="row mb-4">
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example1" class="form-control" placeholder="First name"/>
+                        </div>
+                      </div>
+                      <div class="col">
+                        <div class="form-outline">
+                          <input type="text" id="form7Example2" class="form-control" placeholder="Last name"/>
+                        </div>
+                      </div>
+                    </div>
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form7Example5" class="form-control" placeholder="Email"/>
+                        </div>
+                          <!-- Number input -->
+                          <div class="form-outline mb-4">
+                            <input type="number" id="form7Example6" class="form-control" placeholder="Phone"/>
+                          </div>
+                          <!-- Text input -->
+                          <div class="form-outline mb-4">
+                            <input type="text" id="form7Example4" class="form-control" placeholder="Address"/>
+                          </div>
+                          <!-- Message input -->
+                          <div class="form-outline mb-4">
+                            <textarea class="form-control" id="form7Example7" rows="4" placeholder="Additional information"></textarea>
+                          </div>
+                          <!-- Checkbox -->
+                          <div class="form-check d-flex justify-content-center mb-2">
+                              <input class="form-check-input me-2" type="checkbox" value="" id="form7Example8" checked />
+                              <label class="form-check-label" for="form7Example8">Save this information for next time</label>
+                          </div>               
+                  </form>
+                </div>
+              </div>
+              <div class="colg">
+                <div class="card mb-4">
+                  <div class="card-header py-3">
+                    <h5 class="mb-0">Summary</h5>
+                  </div>
+                  <div class="card-body">
+                    <ul class="list-group list-group-flush">
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 pb-0">
+                        Products
+                        <span>Rs 990.00</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center px-0">
+                        Shipping
+                        <span>Free</span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center border-0 px-0 mb-3">
+                        <div>
+                          <strong>Total amount</strong>
+
+                        </div>
+                        <span><strong>Rs 990.00</strong></span>
+                      </li>
+                    </ul>
+                   <a href="home.html"><button type="button" class="btn payment btn-lg btn-block">Continue to Payment ></button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!--  -->
+
+<!--  -->
+
+<footer style="margin-bottom: -10%;">
+  <div class="container footer">
+      <div class="row">
+        <div class="col-6 col-md-2 mb-3 ">
+          <h5>About Us</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Our Story</a></li>
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Our Team</a></li>
+            <li class="nav-item mb-2"><a href="contact.html" class="nav-link p-0 text-muted">Our Branches</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-6 col-md-4 mb-3">
+          <h5>Opening Hours</h5>
+          <ul class="nav flex-column">
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Monday to Friday - 5.30am to 9.00pm</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Saturday and Sunday - 6.30am to 6.00pm</a></li>
+            <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Poya days - 8.00am to 6.00pm</a></li>
+          </ul>
+        </div>
+  
+        <div class="col-md-5 offset-md-1 mb-3">
+          <form>
+            <h5>Subscribe to our newsletter</h5>
+            <p>Monthly digest of what's new and exciting from us.</p>
+            <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+              <label for="newsletter1" class="visually-hidden">Email address</label>
+              <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+              <button class="btn" type="button">Subscribe</button>
+            </div>
+          </form>
+        </div>
+      </div>
+  
+      <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+        <p style="text-align: center;">Copyright © BreezyBite Bakery 2023</p>
+        <ul class="list-unstyled d-flex">
+          <li style="margin-left: 25%; margin-right: 10%; "><img src="images/icon/twitter.png" width="24" height="24" alt=""></li>
+          <li style="margin: auto; "><img src="images/icon/instagram.png" width="24" height="24"  alt=""></li>
+          <li style="margin-left: 10%; margin-right: 25%;"><img src="images/icon/facebook.png" width="24" height="24"  alt=""></li>
+        </ul>
+      </div>
+    </div>
+</footer>
+  
+<!--  -->
+<script src="bootstrap/js/bootstrap.bundle.js"></script>
+</body>
+</html>
